@@ -28,6 +28,14 @@ body {
     font-size: 3.5rem; 
     margin: 20px 0; 
 }
+/* Quando lo schermo è più stretto di 480px (cellulari) */
+@media (max-width: 480px) {
+    .nome-corsivo { 
+        font-size: 2.0rem;    /* Riduciamo la dimensione */
+        white-space: nowrap;  /* Forza il testo su una sola riga */
+        letter-spacing: -1px; /* Stringe leggermente le lettere se serve */
+    }
+}
 
 .frase-emblematica { 
     font-size: 1.5rem; 
