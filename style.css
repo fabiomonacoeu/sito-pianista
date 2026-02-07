@@ -295,3 +295,32 @@ footer {
     background-color: #fff;
     color: #000;
 }
+.lista-arrangiamenti {
+    list-style: none; /* Toglie i pallini brutti */
+    padding: 20px 0;
+    margin: 0;
+}
+
+.lista-arrangiamenti li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Una righina sottile */
+    font-size: 0.95em;
+}
+
+.lista-arrangiamenti a {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 4px 12px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.lista-arrangiamenti a:hover {
+    background-color: #fff;
+    color: #000;
+}
