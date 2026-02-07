@@ -324,3 +324,32 @@ footer {
     background-color: #fff;
     color: #000;
 }
+/* Centra tutto il contenuto dentro ogni card dell'album */
+.album-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* Centra l'immagine e il testo orizzontalmente */
+    text-align: center;
+}
+
+.album-cover {
+    width: 100%;            /* Sfrutta la larghezza della colonna */
+    max-width: 280px;       /* Ma non diventare più grande di 280px */
+    aspect-ratio: 1 / 1;    /* Forza l'immagine a essere quadrata se non lo fosse */
+    object-fit: cover;      /* Evita che l'immagine si schiacci */
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.album-cover:hover {
+    transform: translateY(-5px); /* Un leggero movimento verso l'alto al passaggio del mouse */
+}
+.album-links {
+    display: flex;
+    flex-wrap: wrap;        /* Se i nomi sono lunghi, li manda a capo ordinatamente */
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
