@@ -386,3 +386,34 @@ footer {
     gap: 10px;
     margin-top: 15px;
 }
+/* Stile per il badge New Release */
+.badge-new {
+    background-color: #ffffff; /* Sfondo bianco */
+    color: #000000;            /* Testo nero */
+    padding: 5px 12px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    letter-spacing: 1px;
+    /* Applichiamo l'animazione */
+    animation: lampeggio-soft 3s infinite ease-in-out;
+}
+
+/* Definizione dell'animazione lampeggiante soft */
+@keyframes lampeggio-soft {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.95);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0.5;
+        transform: scale(0.95);
+    }
+}
