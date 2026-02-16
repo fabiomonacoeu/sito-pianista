@@ -388,7 +388,7 @@ footer {
 }
 /* Stile per il badge New Release */
 .badge-new {
-    background-color: #ffffff; /* Sfondo bianco */
+    background-color: #ff3b30; /* Sfondo rosso */
     color: #000000;            /* Testo nero */
     padding: 5px 12px;
     font-size: 0.7rem;
